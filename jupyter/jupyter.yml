@@ -1,0 +1,12 @@
+version: '3'
+services: 
+    jupyternb:
+        image: jupyter/base-notebook
+        container_name: jupyternb
+        ports: 
+            - 8888:8888
+        volumes: 
+            - './data:/home/jovyan/work'
+            - './scripts:/home/scripts/'
+        user: root
+        network_mode: 'bridge'

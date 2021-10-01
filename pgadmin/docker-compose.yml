@@ -1,0 +1,14 @@
+version: '3'
+services: 
+    pgadmin:
+        image: dpage/pgadmin4
+        container_name: pgadmin
+        ports:
+            - 8090:80
+        network_mode: 'bridge'
+        tty: true
+        environment:
+            PGADMIN_DEFAULT_EMAIL: 'user@gmail.com'
+            PGADMIN_DEFAULT_PASSWORD: 'password'
+        volumes:
+            - './data:/var/lib/pgadmin'
