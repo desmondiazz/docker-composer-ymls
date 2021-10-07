@@ -1,0 +1,15 @@
+version: '3'
+services: 
+  workbench:
+    image: linuxserver/mysql-workbench
+    container_name: workbench
+    environment:
+      - PUID=1000
+      - PGID=1000
+    cap_add:
+      - IPC_LOCK
+    ports:
+      - 8090:3000
+    network_mode: 'bridge'
+    volumes:
+      - './data:/config'
