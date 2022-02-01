@@ -1,6 +1,6 @@
 version: '3'
 services: 
-    pgadmin:
+    postgres:
         image: postgres
         container_name: postgres
         network_mode: 'bridge'
