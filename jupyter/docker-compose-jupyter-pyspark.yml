@@ -6,8 +6,7 @@ services:
         ports: 
             - 8888:8888
         volumes: 
-            - './data:/home/jovyan/work'
+            - './data/jupyter-pyspark:/home/jovyan/work'
             - './scripts:/home/scripts/'
-            #- './opt:/opt/conda/lib/python3.7/site-packages/'
         user: root
         network_mode: 'bridge'
