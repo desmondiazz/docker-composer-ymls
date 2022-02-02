@@ -6,7 +6,7 @@ services:
         ports: 
             - 8888:8888
         volumes: 
-            - './data:/home/jovyan/work'
+            - './data/jupyter:/home/jovyan/work'
             - './scripts:/home/scripts/'
         user: root
         network_mode: 'bridge'
