@@ -1,0 +1,10 @@
+version: '3'
+services: 
+    ubuntu:
+        image: ubuntu
+        container_name: ubuntu
+        network_mode: 'bridge'
+        tty: true
+        volumes:
+            - ./scripts/:/home/scripts/
+        entrypoint: sh -c "/home/scripts/sqoop-installation.sh"

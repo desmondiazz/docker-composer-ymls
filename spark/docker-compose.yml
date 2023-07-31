@@ -8,5 +8,5 @@ services:
         environment:
             SPARK_MODE: 'master'
         volumes:
-            - ./data:/opt/bitnami/spark/data/
-            - ./scripts:/opt/bitnami/spark/script/
+            # - ./data:/opt/bitnami/spark/data/
+            - /home/desmond/Documents/MCS/additional-resources/assignments/BD-capstone:/opt/bitnami/spark/script/
