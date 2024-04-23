@@ -1,0 +1,7 @@
+version: '3'
+services: 
+    jmeter:
+        image: justb4/jmeter
+        container_name: jmeter
+        environment:
+            DISPLAY: :0
